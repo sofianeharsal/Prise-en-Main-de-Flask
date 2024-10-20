@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask User Management</title>
+</head>
+<body>
+    <h1>Welcome to User Management App</h1>
+    <nav>
+        <a href="{{ url_for('add_user') }}">Add User</a> |
+        <a href="{{ url_for('list_users') }}">List Users</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
